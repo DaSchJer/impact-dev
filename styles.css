@@ -454,3 +454,14 @@ background-color: white;
 }
 
 }
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer a {
+  color: var(--prime2);
+  text-decoration: none;
+}
