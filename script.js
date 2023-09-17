@@ -1039,10 +1039,14 @@ function checkSumFor3Stage(sum) {
 }
 
 function custom_sub_form() {
+  var formData = new FormData(jQuery("#impact-form")[0]);
   $.ajax({
+    contentType: false,
+    processData: false,
+    method: 'POST',
+    data: formData,
     url: "http://157.230.112.140/api/post_form/",
     type: "POST",
-    data: JSON.stringify($("#impact-form").serializeArray()),
     crossDomain: true,
     dataType: "json",
 
